@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Навчання програмуванню</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 
-  <!-- Шапка -->
-  <header>
-    <h1>Навчання програмуванню</h1>
-    <p>Обери напрямок і почни вчитися вже сьогодні!</p>
+
+  <header class="header">
+    <div class="container row">
+      <a href="#" class="logo">Mini-Learning-School</a>
+      <nav class="nav">
+        <a href="select.html" class="btn btn-outline">Вибір напрямлення</a>
+        <a href="#about" class="btn">Про нас</a>
+      </nav>
+    </div>
   </header>
 
+ 
 
+  <section class="hero">
+    <div class="container center">
+      <h1>Навчання програмуванню</h1>
+      <p class="muted">Простий сайт для старту: Python, Фронтенд і Бекенд - тільки корисні лінки та короткі плани.</p>
+      <div class="actions">
+        <a href="select.html" class="btn">Обрати напрям</a>
+        <a href="#about" class="btn btn-outline">Дізнатись більше</a>
+      </div>
+    </div>
+  </section>
 
-  <!-- Основний контент -->
-  <main>
-    <div class="card" onclick="goTo('python.html')">Python</div>
-    <div class="card" onclick="goTo('frontend.html')">Фронтенд</div>
-    <div class="card" onclick="goTo('backend.html')">Бекенд</div>
-  </main>
+  
 
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Що ти знайдеш на сайті</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Короткий старт</h3>
+          <p>5 простих кроків для кожного напрямку: що встановити, що прочитати, що зробити.</p>
+        </div>
+        <div class="card">
+          <h3>Перевірені матеріали</h3>
+          <p>Документація, YouTube, книги та невеликі приклади з GitHub - без води.</p>
+        </div>
+        <div class="card">
+          <h3>Просто і зрозуміло</h3>
+          <p>Чисті HTML/CSS/JS - код легко читати та змінювати новачкам.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+ 
 
-  <!-- Футер -->
-  <footer>
-    <p>Проєкт команди школярів © 2025</p>
-    <p>Всі права захищені © 2025</p>
+  <footer class="footer">
+    <div class="container row">
+      <p>Проєкт команди школярів © 2025</p>
+      <ul class="links">
+      </ul>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
