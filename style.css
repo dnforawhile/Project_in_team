@@ -1,155 +1,43 @@
-
 html { scroll-behavior: smooth; }
 * { box-sizing: border-box; }
+
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: #1f2937;         
-  background: #f7f7f8;       
-  line-height: 1.5;
-}
-
-
-.container { max-width: 980px; margin: 0 auto; padding: 0 16px; }
-.section   { padding: 56px 0; }
-.row       { display: flex; align-items: center; justify-content: space-between; }
-.center    { text-align: center; }
-.muted     { color: #6b7280; } 
-
-h1,h2,h3 { margin: 0 0 10px; }
-
-
-.header { background: #fff; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; }
-.header .row { padding: 12px 0; }
-.logo { text-decoration: none; color: #111827; font-weight: 700; }
-
-
-.btn {
-  display: inline-block;
-  padding: 10px 14px;
-  background: #22c55e; 
-  color: #fff;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  text-decoration: none;
-}
-.btn:hover { background: #16a34a; }
-.btn-outline {
-  background: #fff;
-  color: #1f2937;
-  border-color: #e5e7eb;
-}
-.btn-outline:hover { background: #f3f4f6; }
-.actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-
-
-.hero {
-  background: linear-gradient(0deg, #eafff1 0%, #ffffff 60%);
-  padding: 64px 0 48px;
-}
-
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-.card {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  padding: 18px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.08);
-}
-
-
-
-.links { list-style: none; display: flex; gap: 12px; margin: 0; padding: 0; }
-.links a { color: #6b7280; text-decoration: none; }
-.links a:hover { color: #1f2937; }
-
-
-@media (max-width: 720px) {
-  .grid { grid-template-columns: 1fr; }
-}
-
-.section h2 { text-align: center; margin-bottom: 24px; }
-#about { background: #f9fafb; padding: 56px 0; }
-
-.btn { padding: 10px 16px; }
-.btn-main { padding: 12px 20px; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
-
-.footer {
-  background: #602B7A;
-  color: #fff;
-  padding: 20px 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.footer-logo {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-}
-
-.footer-brand {
-  font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 34px;
-}
-
-.footer-center p {
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  margin: 0;
-}
-
-.footer-right #power {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  margin: 0;
-}
-
-
-html, body {
-  height: 100%;
+  font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #1f1f25;         
+  background: #f9f8fb;       
+  line-height: 1.6;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-main {
-  flex: 1;
+main { flex: 1; }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-.footer {
-  margin-top: auto;
-  background: #602B7A;
-  color: #fff;
+.section { padding: 60px 0; }
+.center { text-align: center; }
+.muted { color: #6b6b80; }
+h1,h2,h3 { margin: 0 0 12px; }
+
+
+.header {
+  background: #fff;
+  border-bottom: 3px solid #602B7A; 
   text-align: center;
-  padding: 20px 0;
-  font-family: 'Montserrat', sans-serif;
 }
 
+.logo {
+  color: #602B7A;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+}
 
 
 .btn {
@@ -160,7 +48,6 @@ main {
   border: none;
   border-radius: 12px;           
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
@@ -168,19 +55,16 @@ main {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .btn:hover {
   background: #5a2f8f;          
   transform: translateY(-2px);  
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-
 .btn:active {
   transform: translateY(0);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 .btn-outline {
   background: transparent;
@@ -192,3 +76,236 @@ main {
   background: #6C3EA0;
   color: #fff;
 }
+
+
+.hero {
+  background: linear-gradient(0deg, #f4edfa 0%, #ffffff 60%);
+  padding: 70px 0 60px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #d8c1ef; 
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 3px 6px rgba(108, 62, 160, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(108, 62, 160, 0.15);
+}
+
+
+#about {
+  background: #f9f8fb;
+  padding: 60px 0;
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3a266d;
+}
+
+
+.lessons .lesson-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.lesson-number {
+  background: #6C3EA0;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.lesson-text {
+  flex: 1;
+  margin: 0 20px;
+  text-align: left;
+}
+
+@media (max-width: 720px) {
+  .lesson-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .lesson-number { margin-bottom: 8px; }
+}
+
+
+.footer {
+  background: #602B7A;
+  color: #fff;
+  padding: 14px 0 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: auto;
+  border-top: 5px solid #4e1e6b; 
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-left img.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.footer-left .footer-brand {
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+}
+
+.footer-center p {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+}
+
+.footer-right #power {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+}
+
+
+@media (max-width: 720px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center;
+  }
+}
+
+
+.lesson-page {
+  padding: 60px 0;
+}
+
+.lesson-card {
+  background: #fff;
+  border: 1px solid #d8c1ef;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 3px 6px rgba(108, 62, 160, 0.08);
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.lesson-card p {
+  font-size: 17px;
+  color: #2b2248;
+  line-height: 1.7;
+}
+
+.lesson-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.lesson-card h3 {
+  color: #3a266d;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.lesson-card ul li {
+  margin-bottom: 6px;
+}
+
+.lesson-card pre {
+  white-space: pre-wrap; 
+}
+
+.lesson-card a {
+  font-weight: 600;
+}
+
+.lesson-card h3 {
+  color: #3a266d;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.lesson-card ul li {
+  margin-bottom: 6px;
+}
+
+.lesson-card pre {
+  white-space: pre-wrap;
+  background: #f5effc;
+  padding: 12px;
+  border-radius: 10px;
+  color: #3a266d;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+}
+
+.lesson-card code {
+  background: #efe3fa;
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-family: "Courier New", monospace;
+}
+
+.lesson-card .tip {
+  font-weight: 600;
+  color: #5a2f8f;
+}
+
