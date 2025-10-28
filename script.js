@@ -4,11 +4,10 @@ function goTo(page) {
 }
 
 
-// ===== Визначення сторінки уроку =====
 const params = new URLSearchParams(window.location.search);
 const lessonId = params.get("id");
 
-// Список уроків для фронтенду
+
 const lessons = {
   1: {
   title: "Вступ у фронтенд",
@@ -220,7 +219,7 @@ Accept: application/json
 
 
 
-// Підстановка контенту у сторінку
+
 if (lessonId && document.getElementById("lesson-title")) {
   const lesson = lessons[lessonId];
   if (lesson) {
@@ -232,3 +231,20 @@ if (lessonId && document.getElementById("lesson-title")) {
 
 
 
+const params = new URLSearchParams(window.location.search);
+const lessonId = parseInt(params.get("id"));
+
+// Проверяем, что кнопка существует на странице
+const backBtn = document.getElementById("back-btn");
+if (backBtn) {
+  let coursePage = "index.html"; // запасной вариант
+
+  if (lessonId >= 1 && lessonId <= 3) coursePage = "frontend.html";
+  else if (lessonId >= 4 && lessonId <= 6) coursePage = "backend.html";
+  else if (lessonId >= 7 && lessonId <= 9) coursePage = "python.html";
+
+  backBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.href = coursePage;
+  });
+}
