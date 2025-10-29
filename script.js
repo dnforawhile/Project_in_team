@@ -211,6 +211,107 @@ Accept: application/json
       <p class="tip">💡 Порада: потренуйся працювати з API через сайт <a href="https://reqres.in/" target="_blank">Reqres</a> або <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder</a>.</p>
     `
   },
+    7: {
+    title: "Вступ у Python та керуючі конструкції",
+    content: `
+      <p><strong>Python</strong> — це одна з найпопулярніших мов програмування. Вона проста для початківців і використовується у веброзробці, науці, штучному інтелекті та автоматизації.</p>
+
+      <h3>🔹 Змінні та типи даних</h3>
+      <p>У Python не потрібно вказувати тип змінної — він визначається автоматично:</p>
+      <pre><code>name = "Діонел"
+age = 15
+is_student = True</code></pre>
+      <p>Основні типи даних: <b>int</b> (цілі числа), <b>float</b> (десяткові), <b>str</b> (рядки), <b>bool</b> (істина/хиба).</p>
+
+      <h3>🔹 Умовні оператори</h3>
+      <pre><code>age = 18
+if age >= 18:
+    print("Повнолітній")
+else:
+    print("Неповнолітній")</code></pre>
+
+      <h3>🔹 Цикли</h3>
+      <pre><code>for i in range(5):
+    print("Крок", i)
+
+while True:
+    print("Безкінечний цикл")
+    break</code></pre>
+
+      <p class="tip">💡 Порада: потренуйся у <a href="https://replit.com/~" target="_blank">Replit</a> або <a href="https://www.programiz.com/python/online-compiler/" target="_blank">Programiz Python</a>.</p>
+    `
+  },
+
+  8: {
+    title: "Функції та модулі в Python",
+    content: `
+      <p><strong>Функції</strong> дозволяють повторно використовувати код. Їх зручно створювати для виконання окремих завдань.</p>
+
+      <h3>🔹 Створення функції</h3>
+      <pre><code>def greet(name):
+    print("Привіт,", name)
+
+greet("Анна")</code></pre>
+
+      <h3>🔹 Модулі</h3>
+      <p>Модулі — це готові файли з корисним кодом, які можна підключати за допомогою <code>import</code>.</p>
+      <pre><code>import math
+print(math.sqrt(25))</code></pre>
+
+      <h3>🔹 Модуль random</h3>
+      <pre><code>import random
+print(random.randint(1, 10))</code></pre>
+
+      <p>Цей код виведе випадкове число від 1 до 10.</p>
+
+      <p class="tip">💡 Спробуй створити свій модуль <code>mytools.py</code> і підключити його через <code>import mytools</code>.</p>
+    `
+  },
+
+  9: {
+    title: "Черепашка та основи ООП",
+    content: `
+      <p><strong>Модуль turtle</strong> — це проста графічна бібліотека для малювання фігур за допомогою «черепашки».</p>
+
+      <h3>🔹 Приклад використання</h3>
+      <pre><code>import turtle
+
+t = turtle.Turtle()
+t.color("blue")
+t.pensize(3)
+
+for i in range(4):
+    t.forward(100)
+    t.right(90)
+
+turtle.done()</code></pre>
+      <p>Цей код намалює квадрат.</p>
+
+      <h3>🔹 Основи ООП</h3>
+      <p>ООП (об’єктно-орієнтоване програмування) дозволяє створювати класи та об’єкти.</p>
+      <pre><code>class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(self.name, "гавкає!")
+
+my_dog = Dog("Бім")
+my_dog.bark()</code></pre>
+
+      <h3>🔹 Обробка подій у Turtle</h3>
+      <pre><code>def move():
+    t.forward(50)
+
+turtle.onkey(move, "space")
+turtle.listen()
+turtle.done()</code></pre>
+      <p>Натисни пробіл — і черепашка рухається вперед!</p>
+
+      <p class="tip">💡 Порада: потренуйся на <a href="https://trinket.io/turtle" target="_blank">Trinket Turtle</a>.</p>
+    `
+  },
+
   
   
 
@@ -230,21 +331,16 @@ if (lessonId && document.getElementById("lesson-title")) {
 }
 
 
+// Отримуємо параметри з URL
+const params2 = new URLSearchParams(window.location.search);
+const course = params2.get("course"); // зчитуємо значення, наприклад 'frontend' або 'python'
 
-const params = new URLSearchParams(window.location.search);
-const lessonId = parseInt(params.get("id"));
+// Знаходимо кнопку
+const backBtn = document.getElementById("backBtn");
 
-// Проверяем, что кнопка существует на странице
-const backBtn = document.getElementById("back-btn");
-if (backBtn) {
-  let coursePage = "index.html"; // запасной вариант
-
-  if (lessonId >= 1 && lessonId <= 3) coursePage = "frontend.html";
-  else if (lessonId >= 4 && lessonId <= 6) coursePage = "backend.html";
-  else if (lessonId >= 7 && lessonId <= 9) coursePage = "python.html";
-
-  backBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.location.href = coursePage;
-  });
+// Якщо параметр є — встановлюємо правильне посилання
+if (course) {
+  backBtn.href = course + ".html"; // тобто 'frontend.html' або 'python.html'
+} else {
+  backBtn.href = "index.html"; // запасний варіант, якщо параметр не знайдено
 }
