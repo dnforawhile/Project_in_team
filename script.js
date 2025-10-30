@@ -161,7 +161,7 @@ p {
     <p class="resources-title">📚 Корисні ресурси</p>
     <div class="resources">
       <a href="https://developer.mozilla.org/uk/docs/Learn/CSS" target="_blank">MDN Web Docs — CSS</a>
-      <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc" target="_blank">YouTube: CSS Full Course</a>
+      <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc" target="_blank">YouTube: CSS для початківців</a>
       <a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a>
     </div>
     `
@@ -187,7 +187,7 @@ p {
     <div class="resources">
       <a href="https://developer.mozilla.org/uk/docs/Learn/Server-side" target="_blank">MDN Web Docs — Основи бекенду</a>
       <a href="https://www.youtube.com/watch?v=ENrzD9HAZK4" target="_blank">YouTube: Вступ до бекенду</a>
-      <a href="https://nodejs.org/en/docs" target="_blank">Node.js — Документація</a>
+      <a href="https://uk.wikipedia.org/wiki/Back-end" target="_blank">Вікіпедія: Бекенд</a>
     </div>
     `
   },
@@ -220,7 +220,7 @@ Accept: application/json
     <p class="resources-title">📚 Корисні ресурси</p>
     <div class="resources">
       <a href="https://developer.mozilla.org/uk/docs/Learn/Server-side/First_steps" target="_blank">MDN — Як працює сервер</a>
-      <a href="https://www.youtube.com/watch?v=fBNz5xF-Kx4" target="_blank">YouTube: Node.js сервер за 30 хвилин</a>
+      <a href="https://www.youtube.com/watch?v=KeLiQXqVgMI" target="_blank">YouTube: Як працює сервер</a>
       <a href="https://replit.com/" target="_blank">Replit — Онлайн сервери</a>
     </div>
     `
@@ -260,8 +260,8 @@ Accept: application/json
 
       <h3>🔹 Змінні та типи даних</h3>
       <p>У Python не потрібно вказувати тип змінної - він визначається автоматично:</p>
-      <pre><code>name = "Діонел"
-age = 15
+      <pre><code>name = "Аліса"
+age = 16
 is_student = True</code></pre>
       <p>Основні типи даних: <b>int</b> (цілі числа), <b>float</b> (десяткові), <b>str</b> (рядки), <b>bool</b> (істина/хиба).</p>
 
