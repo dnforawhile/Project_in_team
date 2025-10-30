@@ -388,34 +388,59 @@ if (lessonId && document.getElementById("lesson-title")) {
   }
 }
 
+// 🔙 back.js
+document.addEventListener("DOMContentLoaded", () => {
+  // Зчитуємо параметр з URL, наприклад ?course=frontend
+  const params = new URLSearchParams(window.location.search);
+  const course = params.get("course");
+
+  // Шукаємо кнопку "Назад"
+  const backBtn = document.getElementById("backBtn");
+
+  // Якщо кнопка знайдена — змінюємо посилання
+  if (backBtn) {
+    if (course) {
+      backBtn.href = `${course}.html`; // Напр. "frontend.html" або "python.html"
+    } else {
+      backBtn.href = "index.html"; // Якщо параметр не передано
+    }
+  }
+});
 
 
 
-//-------------------------------------------------------
-// 🌗 Перемикання теми (запам'ятовує вибір користувача)
-//-------------------------------------------------------
-const toggleBtn = document.getElementById("theme-toggle");
-console.log("🔄 Theme toggle script loaded");
-console.log("🎯 toggleBtn =", toggleBtn);
 
-if (toggleBtn) {
+
+// 🌗 theme.js
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("theme-toggle");
+  console.log("🎯 theme.js loaded");
+
+  if (!toggleBtn) return; // Без кнопки — виходимо
+
   // Відновлюємо збережену тему
-  if (localStorage.getItem("theme") === "dark") {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
     document.body.classList.add("dark");
     toggleBtn.textContent = "☀️";
+  } else {
+    toggleBtn.textContent = "🌙";
   }
 
+  // Натискання на кнопку теми
   toggleBtn.addEventListener("click", () => {
-  // добавляем лёгкую плавность только при ручном клике
-  document.body.style.transition = "background-color 0.4s ease, color 0.4s ease";
+    document.body.style.transition = "background-color 0.4s, color 0.4s";
 
-  document.body.classList.toggle("dark");
-  const isDark = document.body.classList.contains("dark");
+    document.body.classList.toggle("dark");
+    const isDark = document.body.classList.contains("dark");
 
-  localStorage.setItem("theme", isDark ? "dark" : "light");
-  toggleBtn.textContent = isDark ? "☀️" : "🌙";
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    toggleBtn.textContent = isDark ? "☀️" : "🌙";
 
-  // убираем transition через секунду, чтобы не мигало на других страницах
-  setTimeout(() => (document.body.style.transition = "none"), 800);
+    // Забираємо ефект плавності після секунди
+    setTimeout(() => {
+      document.body.style.transition = "none";
+    }, 800);
+  });
 });
-}
+
