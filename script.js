@@ -64,9 +64,9 @@ const lessons = {
 
     <p class="resources-title">📚 Корисні ресурси</p>
     <div class="resources">
-      <a href="https://developer.mozilla.org/uk/docs/Learn" target="_blank">MDN Web Docs — Основи фронтенду</a>
+      <a href="https://developer.mozilla.org/uk/docs/Learn" target="_blank">MDN Web Docs - Основи фронтенду</a>
       <a href="https://www.youtube.com/watch?v=nu_pCVPKzTk" target="_blank">YouTube: Основи Frontend розробки</a>
-      <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp — Практичне навчання</a>
+      <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp - Практичне навчання</a>
     </div>  
   `
 },
@@ -124,13 +124,12 @@ const lessons = {
       <li>посилання на улюблений сайт (<code>&lt;a&gt;</code>).</li>
     </ul>
 
-    <p class="tip">📚 Порада: вивчай приклади на <a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML</a></p>
 
     <p class="resources-title">📚 Корисні ресурси</p>
     <div class="resources">
-      <a href="https://developer.mozilla.org/uk/docs/Learn/HTML" target="_blank">MDN Web Docs — HTML</a>
+      <a href="https://developer.mozilla.org/uk/docs/Learn/HTML" target="_blank">MDN Web Docs - HTML</a>
       <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" target="_blank">YouTube: HTML Full Course</a>
-      <a href="https://www.w3schools.com/html/" target="_blank">W3Schools — HTML Туторіали</a>
+      <a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML Туторіали</a>
     </div>
   `
 },
@@ -156,11 +155,10 @@ p {
 
       <p>CSS можна підключити у трьох способах: через тег <code>&lt;style&gt;</code>, окремий файл або атрибут <code>style</code>.</p>
 
-      <p class="tip">💡 Порада: тренуйся на сайті <a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS</a></p>
 
     <p class="resources-title">📚 Корисні ресурси</p>
     <div class="resources">
-      <a href="https://developer.mozilla.org/uk/docs/Learn/CSS" target="_blank">MDN Web Docs — CSS</a>
+      <a href="https://developer.mozilla.org/uk/docs/Learn/CSS" target="_blank">MDN Web Docs - CSS</a>
       <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc" target="_blank">YouTube: CSS для початківців</a>
       <a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a>
     </div>
@@ -181,11 +179,10 @@ p {
         <li><b>Java</b> або <b>C#</b> - для великих систем</li>
       </ul>
 
-      <p class="tip">💡 Порада: спробуй створити простий сервер за допомогою Flask або Node.js.</p>
 
     <p class="resources-title">📚 Корисні ресурси</p>
     <div class="resources">
-      <a href="https://developer.mozilla.org/uk/docs/Learn/Server-side" target="_blank">MDN Web Docs — Основи бекенду</a>
+      <a href="https://developer.mozilla.org/uk/docs/Learn/Server-side" target="_blank">MDN Web Docs - Основи бекенду</a>
       <a href="https://www.youtube.com/watch?v=ENrzD9HAZK4" target="_blank">YouTube: Вступ до бекенду</a>
       <a href="https://uk.wikipedia.org/wiki/Back-end" target="_blank">Вікіпедія: Бекенд</a>
     </div>
@@ -215,13 +212,11 @@ Accept: application/json
   "role": "student"
 }</code></pre>
 
-      <p class="tip">💡 Порада: спробуй безкоштовно підняти тестовий сервер на Replit.</p>
-
     <p class="resources-title">📚 Корисні ресурси</p>
     <div class="resources">
-      <a href="https://developer.mozilla.org/uk/docs/Learn/Server-side/First_steps" target="_blank">MDN — Як працює сервер</a>
+      <a href="https://developer.mozilla.org/uk/docs/Learn/Server-side/First_steps" target="_blank">MDN - Як працює сервер</a>
       <a href="https://www.youtube.com/watch?v=KeLiQXqVgMI" target="_blank">YouTube: Як працює сервер</a>
-      <a href="https://replit.com/" target="_blank">Replit — Онлайн сервери</a>
+      <a href="https://replit.com/" target="_blank">Replit - Онлайн сервери</a>
     </div>
     `
   },
@@ -243,11 +238,10 @@ Accept: application/json
       <p>JSON - це найпопулярніший формат обміну даними у вебі.  
       Його легко зрозуміти і прочитати навіть без досвіду програмування.</p>
 
-      <p class="tip">💡 Порада: потренуйся працювати з API через Reqres або JSONPlaceholder.</p>
 
     <p class="resources-title">📚 Корисні ресурси</p>
     <div class="resources">
-      <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON" target="_blank">MDN — JSON</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON" target="_blank">MDN - JSON</a>
       <a href="https://www.youtube.com/watch?v=GZvSYJDk-us" target="_blank">YouTube: Що таке API?</a>
       <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder</a>
     </div>
@@ -280,12 +274,11 @@ while True:
     print("Безкінечний цикл")
     break</code></pre>
 
-      <p class="tip">💡 Порада: потренуйся у <a href="https://replit.com/~" target="_blank">Replit</a> або <a href="https://www.programiz.com/python/online-compiler/" target="_blank">Programiz Python</a>.</p>
 
     <p class="resources-title">📚 Корисні ресурси</p>
     <div class="resources">
       <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">Офіційна документація Python</a>
-      <a href="https://www.w3schools.com/python/" target="_blank">W3Schools — Python для початківців</a>
+      <a href="https://www.w3schools.com/python/" target="_blank">W3Schools - Python для початківців</a>
       <a href="https://www.youtube.com/watch?v=kqtD5dpn9C8" target="_blank">YouTube: Python Full Course for Beginners</a>
     </div>
     `
@@ -313,12 +306,10 @@ print(random.randint(1, 10))</code></pre>
 
       <p>Цей код виведе випадкове число від 1 до 10.</p>
 
-      <p class="tip">💡 Спробуй створити власний модуль <code>mytools.py</code> і підключити його у головному файлі.</p>
-
     <p class="resources-title">📚 Корисні ресурси</p>
     <div class="resources">
-      <a href="https://realpython.com/" target="_blank">RealPython — корисні гайди</a>
-      <a href="https://www.programiz.com/python-programming/modules" target="_blank">Programiz — Python Modules</a>
+      <a href="https://realpython.com/" target="_blank">RealPython - корисні гайди</a>
+      <a href="https://www.programiz.com/python-programming/modules" target="_blank">Programiz - Python Modules</a>
       <a href="https://www.youtube.com/watch?v=8ext9G7xspg" target="_blank">YouTube: Python Functions Explained</a>
     </div>
     `
@@ -364,12 +355,10 @@ turtle.listen()
 turtle.done()</code></pre>
       <p>Натисни пробіл - і черепашка рухається вперед!</p>
 
-      <p class="tip">💡 Порада: потренуйся на <a href="https://trinket.io/turtle" target="_blank">Trinket Turtle</a>.</p>
-
     <p class="resources-title">📚 Корисні ресурси</p>
     <div class="resources">
       <a href="https://docs.python.org/3/library/turtle.html" target="_blank">Документація Python Turtle</a>
-      <a href="https://realpython.com/python-oop/" target="_blank">RealPython — Основи ООП</a>
+      <a href="https://realpython.com/python-oop/" target="_blank">RealPython - Основи ООП</a>
       <a href="https://www.youtube.com/watch?v=JeznW_7DlB0" target="_blank">YouTube: Object-Oriented Programming in Python</a>
     </div>
     `
@@ -397,7 +386,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Шукаємо кнопку "Назад"
   const backBtn = document.getElementById("backBtn");
 
-  // Якщо кнопка знайдена — змінюємо посилання
+  // Якщо кнопка знайдена - змінюємо посилання
   if (backBtn) {
     if (course) {
       backBtn.href = `${course}.html`; // Напр. "frontend.html" або "python.html"
@@ -416,7 +405,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("theme-toggle");
   console.log("🎯 theme.js loaded");
 
-  if (!toggleBtn) return; // Без кнопки — виходимо
+  if (!toggleBtn) return; // Без кнопки - виходимо
 
   // Відновлюємо збережену тему
   const savedTheme = localStorage.getItem("theme");

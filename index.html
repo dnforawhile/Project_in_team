@@ -12,7 +12,7 @@
     const theme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    // 💡 Якщо користувач нічого не обирав — темна за замовчуванням
+    // 💡 Якщо користувач нічого не обирав - темна за замовчуванням
     const isDark = theme === "dark" || (!theme && prefersDark) || !theme;
 
     if (isDark) {
