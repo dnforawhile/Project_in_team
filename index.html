@@ -6,6 +6,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Навчання програмуванню</title>
+  <script>
+(function() {
+  try {
+    const theme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    // 💡 Якщо користувач нічого не обирав — темна за замовчуванням
+    const isDark = theme === "dark" || (!theme && prefersDark) || !theme;
+
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+      document.documentElement.style.background = "#0f0d13";
+      document.documentElement.style.color = "#e7e2f7";
+    } else {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.style.background = "#f9f8fb";
+      document.documentElement.style.color = "#1f1f25";
+    }
+  } catch (e) {}
+})();
+</script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -16,6 +37,7 @@
   <header class="header">
   <div class="container center">
     <a href="index.html" class="logo">Mini-Learning-School</a>
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
   </div>
   </header>
 
@@ -88,6 +110,6 @@
     </div>
   </div>
   </footer>
-
+<script src="script.js" defer></script>
 </body>
 </html>

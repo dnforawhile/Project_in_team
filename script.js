@@ -61,6 +61,13 @@ const lessons = {
     </ul>
 
     <p class="tip">📘 Рекомендуємо: <a href="https://developer.mozilla.org/uk/docs/Learn" target="_blank">MDN Web Docs: Основи фронтенду</a></p>
+
+    <p class="resources-title">📚 Корисні ресурси</p>
+    <div class="resources">
+      <a href="https://developer.mozilla.org/uk/docs/Learn" target="_blank">MDN Web Docs — Основи фронтенду</a>
+      <a href="https://www.youtube.com/watch?v=nu_pCVPKzTk" target="_blank">YouTube: Основи Frontend розробки</a>
+      <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp — Практичне навчання</a>
+    </div>  
   `
 },
   2: {
@@ -117,7 +124,14 @@ const lessons = {
       <li>посилання на улюблений сайт (<code>&lt;a&gt;</code>).</li>
     </ul>
 
-    <p class="tip">📚 Порада: вивчай приклади на <a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML</a> або <a href="https://developer.mozilla.org/uk/docs/Learn/HTML" target="_blank">MDN HTML Basics</a>.</p>
+    <p class="tip">📚 Порада: вивчай приклади на <a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML</a></p>
+
+    <p class="resources-title">📚 Корисні ресурси</p>
+    <div class="resources">
+      <a href="https://developer.mozilla.org/uk/docs/Learn/HTML" target="_blank">MDN Web Docs — HTML</a>
+      <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" target="_blank">YouTube: HTML Full Course</a>
+      <a href="https://www.w3schools.com/html/" target="_blank">W3Schools — HTML Туторіали</a>
+    </div>
   `
 },
   3: {
@@ -143,6 +157,13 @@ p {
       <p>CSS можна підключити у трьох способах: через тег <code>&lt;style&gt;</code>, окремий файл або атрибут <code>style</code>.</p>
 
       <p class="tip">💡 Порада: тренуйся на сайті <a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS</a></p>
+
+    <p class="resources-title">📚 Корисні ресурси</p>
+    <div class="resources">
+      <a href="https://developer.mozilla.org/uk/docs/Learn/CSS" target="_blank">MDN Web Docs — CSS</a>
+      <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc" target="_blank">YouTube: CSS Full Course</a>
+      <a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a>
+    </div>
     `
   },
    4: {
@@ -160,7 +181,14 @@ p {
         <li><b>Java</b> або <b>C#</b> - для великих систем</li>
       </ul>
 
-      <p class="tip">💡 Порада: спробуй створити простий сервер за допомогою <a href="https://flask.palletsprojects.com/" target="_blank">Flask</a> або <a href="https://nodejs.org/en" target="_blank">Node.js</a>.</p>
+      <p class="tip">💡 Порада: спробуй створити простий сервер за допомогою Flask або Node.js.</p>
+
+    <p class="resources-title">📚 Корисні ресурси</p>
+    <div class="resources">
+      <a href="https://developer.mozilla.org/uk/docs/Learn/Server-side" target="_blank">MDN Web Docs — Основи бекенду</a>
+      <a href="https://www.youtube.com/watch?v=ENrzD9HAZK4" target="_blank">YouTube: Вступ до бекенду</a>
+      <a href="https://nodejs.org/en/docs" target="_blank">Node.js — Документація</a>
+    </div>
     `
   },
 
@@ -187,7 +215,14 @@ Accept: application/json
   "role": "student"
 }</code></pre>
 
-      <p class="tip">💡 Порада: спробуй безкоштовно підняти тестовий сервер на сайті <a href="https://replit.com" target="_blank">Replit</a>.</p>
+      <p class="tip">💡 Порада: спробуй безкоштовно підняти тестовий сервер на Replit.</p>
+
+    <p class="resources-title">📚 Корисні ресурси</p>
+    <div class="resources">
+      <a href="https://developer.mozilla.org/uk/docs/Learn/Server-side/First_steps" target="_blank">MDN — Як працює сервер</a>
+      <a href="https://www.youtube.com/watch?v=fBNz5xF-Kx4" target="_blank">YouTube: Node.js сервер за 30 хвилин</a>
+      <a href="https://replit.com/" target="_blank">Replit — Онлайн сервери</a>
+    </div>
     `
   },
 
@@ -208,16 +243,23 @@ Accept: application/json
       <p>JSON - це найпопулярніший формат обміну даними у вебі.  
       Його легко зрозуміти і прочитати навіть без досвіду програмування.</p>
 
-      <p class="tip">💡 Порада: потренуйся працювати з API через сайт <a href="https://reqres.in/" target="_blank">Reqres</a> або <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder</a>.</p>
+      <p class="tip">💡 Порада: потренуйся працювати з API через Reqres або JSONPlaceholder.</p>
+
+    <p class="resources-title">📚 Корисні ресурси</p>
+    <div class="resources">
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON" target="_blank">MDN — JSON</a>
+      <a href="https://www.youtube.com/watch?v=GZvSYJDk-us" target="_blank">YouTube: Що таке API?</a>
+      <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder</a>
+    </div>
     `
   },
     7: {
     title: "Вступ у Python та керуючі конструкції",
     content: `
-      <p><strong>Python</strong> — це одна з найпопулярніших мов програмування. Вона проста для початківців і використовується у веброзробці, науці, штучному інтелекті та автоматизації.</p>
+      <p><strong>Python</strong> - це одна з найпопулярніших мов програмування. Вона проста для початківців і використовується у веброзробці, науці, штучному інтелекті та автоматизації.</p>
 
       <h3>🔹 Змінні та типи даних</h3>
-      <p>У Python не потрібно вказувати тип змінної — він визначається автоматично:</p>
+      <p>У Python не потрібно вказувати тип змінної - він визначається автоматично:</p>
       <pre><code>name = "Діонел"
 age = 15
 is_student = True</code></pre>
@@ -239,6 +281,13 @@ while True:
     break</code></pre>
 
       <p class="tip">💡 Порада: потренуйся у <a href="https://replit.com/~" target="_blank">Replit</a> або <a href="https://www.programiz.com/python/online-compiler/" target="_blank">Programiz Python</a>.</p>
+
+    <p class="resources-title">📚 Корисні ресурси</p>
+    <div class="resources">
+      <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">Офіційна документація Python</a>
+      <a href="https://www.w3schools.com/python/" target="_blank">W3Schools — Python для початківців</a>
+      <a href="https://www.youtube.com/watch?v=kqtD5dpn9C8" target="_blank">YouTube: Python Full Course for Beginners</a>
+    </div>
     `
   },
 
@@ -254,7 +303,7 @@ while True:
 greet("Анна")</code></pre>
 
       <h3>🔹 Модулі</h3>
-      <p>Модулі — це готові файли з корисним кодом, які можна підключати за допомогою <code>import</code>.</p>
+      <p>Модулі - це готові файли з корисним кодом, які можна підключати за допомогою <code>import</code>.</p>
       <pre><code>import math
 print(math.sqrt(25))</code></pre>
 
@@ -264,14 +313,21 @@ print(random.randint(1, 10))</code></pre>
 
       <p>Цей код виведе випадкове число від 1 до 10.</p>
 
-      <p class="tip">💡 Спробуй створити свій модуль <code>mytools.py</code> і підключити його через <code>import mytools</code>.</p>
+      <p class="tip">💡 Спробуй створити власний модуль <code>mytools.py</code> і підключити його у головному файлі.</p>
+
+    <p class="resources-title">📚 Корисні ресурси</p>
+    <div class="resources">
+      <a href="https://realpython.com/" target="_blank">RealPython — корисні гайди</a>
+      <a href="https://www.programiz.com/python-programming/modules" target="_blank">Programiz — Python Modules</a>
+      <a href="https://www.youtube.com/watch?v=8ext9G7xspg" target="_blank">YouTube: Python Functions Explained</a>
+    </div>
     `
   },
 
   9: {
     title: "Черепашка та основи ООП",
     content: `
-      <p><strong>Модуль turtle</strong> — це проста графічна бібліотека для малювання фігур за допомогою «черепашки».</p>
+      <p><strong>Модуль turtle</strong> - це проста графічна бібліотека для малювання фігур за допомогою «черепашки».</p>
 
       <h3>🔹 Приклад використання</h3>
       <pre><code>import turtle
@@ -306,16 +362,18 @@ my_dog.bark()</code></pre>
 turtle.onkey(move, "space")
 turtle.listen()
 turtle.done()</code></pre>
-      <p>Натисни пробіл — і черепашка рухається вперед!</p>
+      <p>Натисни пробіл - і черепашка рухається вперед!</p>
 
       <p class="tip">💡 Порада: потренуйся на <a href="https://trinket.io/turtle" target="_blank">Trinket Turtle</a>.</p>
+
+    <p class="resources-title">📚 Корисні ресурси</p>
+    <div class="resources">
+      <a href="https://docs.python.org/3/library/turtle.html" target="_blank">Документація Python Turtle</a>
+      <a href="https://realpython.com/python-oop/" target="_blank">RealPython — Основи ООП</a>
+      <a href="https://www.youtube.com/watch?v=JeznW_7DlB0" target="_blank">YouTube: Object-Oriented Programming in Python</a>
+    </div>
     `
   },
-
-  
-  
-
-
 };
 
 
@@ -331,16 +389,33 @@ if (lessonId && document.getElementById("lesson-title")) {
 }
 
 
-// Отримуємо параметри з URL
-const params2 = new URLSearchParams(window.location.search);
-const course = params2.get("course"); // зчитуємо значення, наприклад 'frontend' або 'python'
 
-// Знаходимо кнопку
-const backBtn = document.getElementById("backBtn");
 
-// Якщо параметр є — встановлюємо правильне посилання
-if (course) {
-  backBtn.href = course + ".html"; // тобто 'frontend.html' або 'python.html'
-} else {
-  backBtn.href = "index.html"; // запасний варіант, якщо параметр не знайдено
+//-------------------------------------------------------
+// 🌗 Перемикання теми (запам'ятовує вибір користувача)
+//-------------------------------------------------------
+const toggleBtn = document.getElementById("theme-toggle");
+console.log("🔄 Theme toggle script loaded");
+console.log("🎯 toggleBtn =", toggleBtn);
+
+if (toggleBtn) {
+  // Відновлюємо збережену тему
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggleBtn.textContent = "☀️";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+  // добавляем лёгкую плавность только при ручном клике
+  document.body.style.transition = "background-color 0.4s ease, color 0.4s ease";
+
+  document.body.classList.toggle("dark");
+  const isDark = document.body.classList.contains("dark");
+
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+  toggleBtn.textContent = isDark ? "☀️" : "🌙";
+
+  // убираем transition через секунду, чтобы не мигало на других страницах
+  setTimeout(() => (document.body.style.transition = "none"), 800);
+});
 }
